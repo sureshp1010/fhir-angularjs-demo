@@ -6,14 +6,14 @@ angular
 
     $routeProvider
       .when("/", {
-        templateUrl: "../view/pages/patient.html",
-        controller: "patientSearchCtl",
-        controllerAs: "patientSearchCtl",
-      })
-      .when("/observation", {
         templateUrl: "../view/pages/observation.html",
         controller: "observationSearchCtl",
         controllerAs: "observationSearchCtl",
+      })
+      .when("/Patient", {
+        templateUrl: "../view/pages/patient.html",
+        controller: "patientSearchCtl",
+        controllerAs: "patientSearchCtl",
       });
     //.otherwise({ redirect: "/" });
   });
