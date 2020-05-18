@@ -73,14 +73,17 @@ angular
             let dataArray = [20];
             res.entry.forEach((element) => {
               // console.log("element.resource.id : " + element.resource.id);
+              let pName = "No Family Name";
+              if (element.resource.name) {
+                if (element.resource.name[0]) {
+                  pName = element.resource.name[0].family;
+                }
+              }
+
               dataArray.push({
                 id: element.resource.id,
-                name:
-                  element.resource.name[0] !== "undefined"
-                    ? element.resource.name[0]
-                      ? element.resource.name[0].family
-                      : "No Name available"
-                    : "No Name available",
+                name: pName,
+
                 gender: element.resource.gender,
                 birthday: element.resource.birthDate,
               });
