@@ -1,0 +1,27 @@
+<div>
+  <div>
+    <!-- <div ui-grid="gridOptions"></div> -->
+
+    <div
+      id="grid1"
+      ui-grid="gridOptions"
+      ui-grid-auto-resize
+      class="myGrid"
+    ></div>
+  </div>
+
+  <div>
+    <button
+      ng-click="observationSearchCtl.prevData()"
+      ng-disabled="IsDisabledPrev"
+    >
+      PREV
+    </button>
+    <button
+      ng-click="observationSearchCtl.nextData()"
+      ng-disabled="IsDisabledNext"
+    >
+      NEXT
+    </button>
+  </div>
+</div>

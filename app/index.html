@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+
+<head>
+
+    
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script> -->
+    <script src="../assets/js/angular.js"></script>
+    <script src="../assets/js/angular-route.js"></script>
+    <script src="../assets/js/angular-animate.js"></script>
+        
+    <link rel="stylesheet" href="../assets/angular-ui-grid/ui-grid.min.css">
+    <script type="text/javascript" src="../assets/angular-ui-grid/ui-grid.js"></script>
+	<script type="text/javascript" src="../assets/angular-ui-grid/ui-grid.min.js"></script>
+	<script type="text/javascript" src="../assets/angular-ui-grid/ui-grid.auto-resize.min.js"></script>
+   
+    <script  src="app.js"></script>
+    <script src="routes.js"></script>
+ <script src="./conrollers/data-grid-ctl.js"></script>
+ 
+</head>
+
+<body ng-app="userApp">
+
+ 
+    <div style="width: 15%; float:left">
+        <ur>
+            <li><a href="#/">Patient</a></li>
+            <li><a href="#/observation">Observation</a></li>
+        </ur>
+
+     </div>
+     
+     <div style="width: 85%; float:right">
+        <div ng-view> </div>
+     </div>
+
+
+
+
+</html>
